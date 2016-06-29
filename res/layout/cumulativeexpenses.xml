@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back_menu6"
+    >
+
+    <Button
+        android:id="@+id/bCumulativeExpenses_CategoryWiseYearly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bCumulativeExpenses_CategoryWiseMonthly"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Category Wise(yearly)" />
+
+    <Button
+        android:id="@+id/bCumulativeExpenses_CategoryWiseMonthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bCumulativeExpenses_Yearly"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Category Wise(monthly)" />
+
+    <Button
+        android:id="@+id/bCumulativeExpenses_Yearly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bCumulativeExpenses_Monthly"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="This Year" />
+
+    <Button
+        android:id="@+id/bCumulativeExpenses_Monthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bCumulativeExpenses_Specifically"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="This Month" />
+
+    <Button
+        android:id="@+id/bCumulativeExpenses_Specifically"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="125dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Specifically" />
+
+    <Button
+        android:id="@+id/bCumulativeExpenses_Budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bCumulativeExpenses_Specifically"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="59dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:text="Budget" />
+
+
+</RelativeLayout>

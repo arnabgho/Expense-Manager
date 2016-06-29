@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/back"
+     >
+<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:orientation="vertical"
+             >
+
+    
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_weight="40">
+
+    		<LinearLayout
+    		    android:layout_width="match_parent"
+    		    android:layout_height="203dp"
+    		    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tvAddExpense_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Total Expense" />
+
+    <EditText
+        android:id="@+id/etAddExpense_TotalExpense"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvAddExpense_Description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/etAddexpense_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Elaboration" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvAddExpense_Category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Category" />
+
+    <Spinner
+        android:id="@+id/spinAddExpense_Category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/pickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Set Date" />
+    
+    </LinearLayout>
+    </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bAddExpense_Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Update" />
+
+</LinearLayout>
+
+		<LinearLayout android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_weight="30"
+		android:layout_height="fill_parent">
+
+			<AnalogClock
+			    android:id="@+id/analogClock1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center" />
+
+	</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

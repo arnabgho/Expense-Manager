@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical" >
+
+       <Button
+       android:id="@+id/bMenu_AddExpense"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:padding="@dimen/activity_horizontal_margin"
+       android:text="Add Expense" />
+    
+    <Button
+        android:id="@+id/bMenu_PaymentForFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bMenu_AddExpense"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Pay For Friends" />
+
+    <Button
+        android:id="@+id/bMenu_AddFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bMenu_PaymentForFriends"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Friends(Add/Remove)" />
+
+    <Button
+        android:id="@+id/bMenu_FriendAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bMenu_AddFriend"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Friends(Account)" />
+
+    <Button
+        android:id="@+id/bMenu_Incomes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bMenu_FriendAccount"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Incomes" />
+    
+    <Button
+        android:id="@+id/bMenu_CumulativeExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bMenu_Incomes"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Expenses" />
+    
+    <Button
+        android:id="@+id/bMenu_DatabaseView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bMenu_CumulativeExpense"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Database View" />
+        
+   <Button
+       android:id="@+id/bMenu_Remove"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/bMenu_DatabaseView"
+       android:padding="@dimen/activity_horizontal_margin"
+       android:text="Remove From Database" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/back"
+     >
+
+<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+    		    android:layout_height="match_parent"
+    		    android:orientation="vertical"
+             >
+    
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_weight="40">
+
+    		<LinearLayout
+    		    android:layout_width="match_parent"
+    		    android:layout_height="203dp"
+    		    android:orientation="vertical" 
+    		    android:id="@+id/grouplayout1"
+    		    >
+    
+        <TextView
+        android:id="@+id/tvPaymentForFriend_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Expense" />
+
+    <EditText
+        android:id="@+id/etPaymentForFriend_TotalExpense"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvPaymentForFriend_Description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/etPaymentForFriend_Description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Elaboration" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPaymentForFriend_Category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Category" />
+
+    <Spinner
+        android:id="@+id/spinPaymentForFriend_Category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+         />
+
+    <TextView
+        android:id="@+id/dateDisplay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Date" />
+
+    <Button
+        android:id="@+id/pickDate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Set Date" />
+    
+    <TextView 
+        android:id="@+id/tvPaymentForFriend_payfor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay For :"
+        />
+    
+    </LinearLayout>
+    </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bPaymentForFriend_ManyFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pay For Many Friends" />
+
+</LinearLayout>
+
+		<LinearLayout android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_weight="30"
+		android:layout_height="fill_parent">
+
+			<AnalogClock
+			    android:id="@+id/analogClock1"
+			    android:layout_width="131dp"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center" />
+
+	</LinearLayout>
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

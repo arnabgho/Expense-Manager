@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arnab.meandmyfriendsexpense"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.Prefs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.AddExpense"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.ADDEXPENSE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.CumulativeExpense"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+             >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.CUMULATIVEEXPENSE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+       <activity
+            android:name="com.arnab.meandmyfriendsexpense.Specifically"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.SPECIFICALLY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>        
+        
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.yearlyExpense"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.YEARLYEXPENSE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.PaymentForFriends"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.PAYMENTFORFRIENDS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.arnab.meandmyfriendsexpense.Incomes"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.INCOMES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.arnab.meandmyfriendsexpense.PaymentForFriends1"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.PAYMENTFORFRIENDS1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name="com.arnab.meandmyfriendsexpense.DatabaseView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.DATABASEVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name="com.arnab.meandmyfriendsexpense.AddFriend"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.ADDFRIEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+            android:name="com.arnab.meandmyfriendsexpense.Add_Friend"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.ADD_FRIEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>                
+                
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.Friend"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.FRIEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.FriendLog"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.FRIENDLOG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.friendDue"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.FRIENDDUE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.RemoveTransaction"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.REMOVETRANSACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.arnab.meandmyfriendsexpense.Menu_new1"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.MENU_NEW1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>        
+        
+         <activity
+            android:name="com.arnab.meandmyfriendsexpense.Budget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.arnab.meandmyfriendsexpense.BUDGET" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+		<activity android:name="org.achartengine.GraphicalActivity"/>
+    </application>
+
+</manifest>
